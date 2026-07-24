@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#status {
+    margin: 15px;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+#listContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    min-height: 120px;
+}
+
+.node {
+    width: 70px;
+    height: 70px;
+    background: #06b6d4;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    animation: pop 0.5s;
+}
+
+.node::after {
+    content: "→";
+    position: absolute;
+    right: -22px;
+    font-size: 28px;
+}
+
+.node:last-child::after {
+    content: "NULL";
+    right: -45px;
+    font-size: 14px;
+    color: yellow;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
