@@ -1,3 +1,4 @@
+const codeDisplay = document.getElementById("codeDisplay");
 let list = [];
 
 const container = document.getElementById("listContainer");
@@ -22,7 +23,32 @@ function drawList(highlight = -1) {
         container.appendChild(node);
     });
 }
+function showCode(type){
+    if(type=="insertBegin"){
+        codeDisplay.textContent=`Insert Beginning C Code`;
+    }
 
+    if(type=="insertEnd"){
+        codeDisplay.textContent=`Insert End C Code`;
+    }
+
+    if(type=="deleteBegin"){
+        codeDisplay.textContent=`Delete Beginning C Code`;
+    }
+
+    if(type=="deleteEnd"){
+        codeDisplay.textContent=`Delete End C Code`;
+    }
+
+    if(type=="search"){
+        codeDisplay.textContent=`Search C Code`;
+    }
+}
+async function insertBegin() {
+    showCode("insertBegin");
+
+    // baaki code...
+}
 async function insertBegin() {
     let value = document.getElementById("value").value;
 
@@ -36,7 +62,10 @@ async function insertBegin() {
     status.innerText = "Inserted at Beginning";
     drawList();
 }
+async function insertEnd() {
+    showCode("insertEnd");
 
+}
 async function insertEnd() {
     let value = document.getElementById("value").value;
 
@@ -50,7 +79,11 @@ async function insertEnd() {
     status.innerText = "Inserted at End";
     drawList();
 }
+async function deleteBegin() {
+    showCode("deleteBegin");
 
+    
+}
 async function deleteBegin() {
     if (list.length === 0) return;
 
@@ -62,7 +95,11 @@ async function deleteBegin() {
     status.innerText = "Deleted";
     drawList();
 }
+async function deleteEnd() {
+    showCode("deleteEnd");
 
+
+}
 async function deleteEnd() {
     if (list.length === 0) return;
 
@@ -74,7 +111,11 @@ async function deleteEnd() {
     status.innerText = "Deleted";
     drawList();
 }
+async function searchNode() {
+    showCode("search");
 
+    
+}
 async function searchNode() {
     let value = document.getElementById("value").value;
 
