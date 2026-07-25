@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linked List Visualizer</title>
+    <title>Animated Linked List Visualizer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>🔗 Animated Linked List Visualizer</h1>
-    </header>
+    <h1>🔗 Animated Linked List Visualizer</h1>
 
     <div class="controls">
-        <input type="number" id="value" placeholder="Enter Value">
+
+        <input
+            type="number"
+            id="value"
+            placeholder="Enter Value">
 
         <button onclick="insertBegin()">Insert Beginning</button>
         <button onclick="insertEnd()">Insert End</button>
@@ -21,18 +25,24 @@
         <button onclick="deleteEnd()">Delete End</button>
         <button onclick="searchNode()">Search</button>
         <button onclick="resetList()">Reset</button>
+
     </div>
 
-    <h3>Status:</h3>
+    <h2>Status:</h2>
     <p id="status">Ready...</p>
 
     <div id="listContainer"></div>
-<div class="code-panel">
-    <h2>C Code</h2>
-    <pre id="codeDisplay">
+
+    <div class="code-panel">
+
+        <h2>C Code</h2>
+
+        <pre id="codeDisplay">
 Select any operation to view C code...
-    </pre>
-</div>
+        </pre>
+
+    </div>
+
     <script src="script.js"></script>
 
 </body>
