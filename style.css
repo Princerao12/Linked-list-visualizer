@@ -97,3 +97,32 @@ button:hover {
         transform: scale(1);
     }
 }
+/* Code Panel */
+
+.code-panel{
+    width:90%;
+    margin:30px auto;
+    background:#1e293b;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:left;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+.code-panel h2{
+    margin-bottom:10px;
+    color:#38bdf8;
+    font-size:22px;
+}
+
+.code-panel pre{
+    white-space:pre-wrap;
+    font-size:15px;
+    line-height:1.6;
+    background:#0f172a;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+    color:#22c55e;
+}
