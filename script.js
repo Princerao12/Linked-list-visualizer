@@ -44,12 +44,9 @@ function showCode(type){
         codeDisplay.textContent=`Search C Code`;
     }
 }
-async function insertBegin() {
-    showCode("insertBegin");
-
-    // baaki code...
 }
 async function insertBegin() {
+    showCode("insertBegin");
     let value = document.getElementById("value").value;
 
     if (value === "") return alert("Enter a value");
@@ -62,11 +59,11 @@ async function insertBegin() {
     status.innerText = "Inserted at Beginning";
     drawList();
 }
-async function insertEnd() {
-    showCode("insertEnd");
 
 }
 async function insertEnd() {
+    showCode("insertEnd");
+    
     let value = document.getElementById("value").value;
 
     if (value === "") return alert("Enter a value");
@@ -79,12 +76,10 @@ async function insertEnd() {
     status.innerText = "Inserted at End";
     drawList();
 }
-async function deleteBegin() {
-    showCode("deleteBegin");
 
-    
 }
 async function deleteBegin() {
+    showCode("deleteBegin");
     if (list.length === 0) return;
 
     status.innerText = "Deleting first node...";
@@ -95,12 +90,10 @@ async function deleteBegin() {
     status.innerText = "Deleted";
     drawList();
 }
-async function deleteEnd() {
-    showCode("deleteEnd");
-
 
 }
 async function deleteEnd() {
+    showCode("deleteEnd");
     if (list.length === 0) return;
 
     status.innerText = "Deleting last node...";
@@ -110,13 +103,10 @@ async function deleteEnd() {
 
     status.innerText = "Deleted";
     drawList();
+}   
 }
 async function searchNode() {
     showCode("search");
-
-    
-}
-async function searchNode() {
     let value = document.getElementById("value").value;
 
     if (value === "") return;
