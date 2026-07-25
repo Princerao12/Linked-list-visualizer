@@ -44,7 +44,6 @@ function showCode(type){
         codeDisplay.textContent=`Search C Code`;
     }
 }
-}
 async function insertBegin() {
     showCode("insertBegin");
     let value = document.getElementById("value").value;
@@ -60,7 +59,6 @@ async function insertBegin() {
     drawList();
 }
 
-}
 async function insertEnd() {
     showCode("insertEnd");
     
@@ -77,7 +75,6 @@ async function insertEnd() {
     drawList();
 }
 
-}
 async function deleteBegin() {
     showCode("deleteBegin");
     if (list.length === 0) return;
@@ -91,7 +88,6 @@ async function deleteBegin() {
     drawList();
 }
 
-}
 async function deleteEnd() {
     showCode("deleteEnd");
     if (list.length === 0) return;
@@ -104,7 +100,6 @@ async function deleteEnd() {
     status.innerText = "Deleted";
     drawList();
 }   
-}
 async function searchNode() {
     showCode("search");
     let value = document.getElementById("value").value;
